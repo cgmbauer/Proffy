@@ -44,6 +44,16 @@ export const Header = styled.header`
       line-height: 4.2rem;
       color: ${colors.colorTitleInPrimary};
     }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: ${colors.colorTextInPrimary};
+
+      max-width: 30rem;
+
+      margin-top: 2.4rem;
+    }
   }
 
   @media (min-width: 700px) {
