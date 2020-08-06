@@ -16,61 +16,39 @@ export const Form = styled.form`
 
   @media (min-width: 700px) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 16px;
 
     position: absolute;
     bottom: -28px;
   }
 
-  div {
-    position: relative;
+  button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    label {
-      color: ${colors.colorTextInPrimary};
-      font-size: 1.4rem;
-    }
-
-    input {
       width: 100%;
       height: 5.6rem;
 
-      font: 1.6rem 'Archivo';
+      margin-top: 3.2rem;
 
-      margin-top: 0.8rem;
-      padding: 0 1.6rem;
+      background: ${colors.colorSecundary};
 
-      border: 1px solid ${colors.colorLineInWhite};
+      font: 700 1.6rem 'Archivo';
+      color: ${colors.colorButtonText};
+      text-decoration: none;
+
+      border: 0;
       border-radius: 0.8rem;
-      outline: 0;
 
-      background: ${colors.colorInputBackground};
-    }
+      cursor: pointer;
 
-    & + div {
-      margin-top: 1.4rem;
-    }
+      transition: background-color 0.2s;
 
-    @media (min-width: 700px) {
-      & + div {
-        margin-top: 0;
+      &:hover {
+        background: ${colors.colorSecundaryDark};
       }
-    }
-
-    &:focus-within::after {
-      content: '';
-
-      width: calc(100% - 3.2rem);
-      height: 2px;
-
-      background: ${colors.colorPrimaryLight};
-
-      position: absolute;
-      left: 1.6rem;
-      right: 1.6rem;
-      bottom: 0;
-    }
-  }
 `;
 
 export const Main = styled.main`
