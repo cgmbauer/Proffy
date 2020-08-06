@@ -71,7 +71,7 @@ export const Article = styled.article`
       }
     }
 
-    button {
+    a {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -81,6 +81,8 @@ export const Article = styled.article`
 
       font: 700 1.4rem 'Archivo';
       color: ${colors.colorButtonText};
+      text-decoration: none;
+
       background: ${colors.colorSecundary};
 
       border: 0;
