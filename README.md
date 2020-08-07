@@ -1,6 +1,7 @@
 <p align="center">
   <img src='https://github.com/cgmbauer/assets/blob/master/logo/ProffyLogo.png' alt='GoStack logo' width="100%" />   
 </p> 
+:construction:Readme in progress:construction:  
 
 # GoFinances Web
 
