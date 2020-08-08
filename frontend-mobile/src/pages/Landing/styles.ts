@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components/native';
+import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex: 1;
@@ -45,18 +46,18 @@ const Button = css`
   padding: 24px;
 `;
 
-export const ButtonPrimary = styled.TouchableOpacity`
+export const ButtonPrimary = styled(RectButton)`
   ${Button};
   background-color: #9871f5;
 `;
 
 export const ButtonText = styled.Text`
-  font-family: 'Archive_700bold';
+  font-family: 'Archivo_700Bold';
   color: #fff;
   font-size: 20px;
 `;
 
-export const ButtonSecondary = styled.TouchableOpacity`
+export const ButtonSecondary = styled(RectButton)`
   ${Button};
   background-color: #04d361;
 `;
